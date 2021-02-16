@@ -1,0 +1,97 @@
+@keyframes imageOpacity {
+    0%{
+        transform: rotateZ(270deg) scale(0.1);
+    }
+    33.33%{
+        transform: rotateZ(380deg);
+    }
+    66.66%{
+        transform: rotateZ(350deg);
+    }
+    100%{
+        transform: rotateZ(360deg) scale(1);
+    }
+}
+
+@keyframes firstName {
+    to {
+        opacity: 1;
+        transform: translateY(0) translatex(.25vw);
+    }
+}
+
+@keyframes lastName {
+    to {
+        opacity: 1;
+        transform: translateY(0) translatex(.25vw);
+    }
+}
+
+#container{
+    min-height: 100vh;
+    height:500px;
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    animation-name: imageOpacity;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    background: url('https://neerraghuwanshi.s3.ap-south-1.amazonaws.com/coverImage.jpg') no-repeat center center/contain;
+}
+
+.name{
+    color:white;
+    opacity:0;
+    text-align: center;
+    margin: 10vh .5vw 0 .5vh;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    font-family: 'Roboto Mono', monospace;
+    transform: translateX(.5vw);
+}
+
+#firstName{
+    transform: translateY(5vh) translateX(.5vw);
+    animation-name: firstName;
+}
+
+#lastName{
+    transform: translateY(-5vh);
+    animation-name: lastName;
+}
+
+@media (min-width: 100px) and (max-width: 264px) {
+    .name {
+        font-size: .8rem;
+    } 
+}
+
+@media (min-width: 265px) and (max-width: 360px) {
+    .name {
+        font-size: 1rem;
+    } 
+}
+
+@media (min-width: 361px) and (max-width: 600px){
+    .name {
+        font-size: 1.4rem;
+    } 
+}
+
+@media (min-width:601px) and (max-width: 1499px){
+    .name {
+        font-size: 2rem;
+    } 
+}
+
+@media (min-width: 1500px){
+    .name {
+        font-size: 3rem;
+    } 
+}

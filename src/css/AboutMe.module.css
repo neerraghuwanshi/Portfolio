@@ -1,0 +1,78 @@
+#aboutmeFirstDiv{
+    min-height: 90vh;
+    margin-top: 10vh;
+    padding: 20px;
+    padding-bottom: 0;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSection{
+    width: 90vw;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    font-size: .7rem;
+}
+
+.link{
+    color: rgb(82, 180, 236);
+}
+
+.link:hover{
+    text-decoration: none;
+    color: rgb(82, 180, 236);
+}
+
+
+@media (max-height: 400px){
+    #aboutmeFirstDiv{
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 400px){
+    .aboutSection{
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 768px){
+    #aboutmeFirstDiv{
+        padding-top: 5vh;
+    }
+    .aboutSection{
+        width: 80vw;
+        margin-bottom: 5vh;
+        font-size: .9rem;
+    }
+}
+
+@media (min-width: 992px){
+    .aboutSection{
+        width: 70vw;
+    }
+}
+
+@media (min-width: 1200px){
+    .aboutSection{
+        width: 60vw;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1600px){
+    .aboutSection{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1800px){
+    .aboutSection{
+        font-size: 1.5rem;
+    }
+}
