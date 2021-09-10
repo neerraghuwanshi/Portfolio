@@ -3,7 +3,7 @@ import styles from '../css/CentreText.module.css'
 
 export default function CentreText(props){
 
-    const { text } = props
+    const { text, time, style } = props
 
     const currentText = useRef(text[0])
     
@@ -23,7 +23,7 @@ export default function CentreText(props){
         else{
             currentText.current.textContent = text.slice(0, currentTextLength+1)
         }
-    },[100])
+    },[time ? time : 100])
 
     useEffect(() => {
         return () => clearInterval(wordLoop)
@@ -31,7 +31,10 @@ export default function CentreText(props){
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.text} ref={currentText}>
+            <h1 
+                style={style ? style : {}}
+                className={styles.text} 
+                ref={currentText}>
                 {text[0]}
             </h1>
         </div>

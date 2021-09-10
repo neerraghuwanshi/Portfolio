@@ -16,7 +16,7 @@
     margin-bottom: 20px;
     font-family: 'Roboto Mono', monospace;
     color: black;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .link{
@@ -37,7 +37,7 @@
 
 @media (min-width: 400px){
     .aboutSection{
-        font-size: .8rem;
+        font-size: .9rem;
     }
 }
 
@@ -48,7 +48,7 @@
     .aboutSection{
         width: 80vw;
         margin-bottom: 5vh;
-        font-size: .9rem;
+        font-size: 1rem;
     }
 }
 
@@ -61,7 +61,7 @@
 @media (min-width: 1200px){
     .aboutSection{
         width: 60vw;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -73,6 +73,6 @@
 
 @media (min-width: 1800px){
     .aboutSection{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }

@@ -18,7 +18,7 @@ export default class AboutMe extends Component {
                         , a digital marketing app available on google play store.
                     </p>
                     <p className={styles.aboutSection}>
-                        {'A tech enthusiast, who is dedicated and efficient in full stack development with more than 1 year of experience in writing scalable code, designing complex fronted & responsive designs, writing efficient APIs, working on databases and cloud computing. Seeking to further improve my development skills by working on more extensive and interesting projects.'}
+                        {'A tech enthusiast, who is dedicated and efficient in full stack development with 2 years of experience in writing scalable code, designing complex fronted & responsive designs, writing efficient APIs, working on databases and cloud computing. Seeking to further improve my development skills by working on more extensive and interesting projects.'}
                     </p>
                     <p className={styles.aboutSection}>
                         With a vision to learn new each day and master fields of my interest to contribute in innovation and problem solving.

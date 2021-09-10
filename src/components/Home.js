@@ -6,15 +6,9 @@ const Home = () => {
 
     return (
         <div id={styles.container}>
-            <h1 
-                className={styles.name} 
-                id={styles.firstName}>
-                {'Neer'}
-            </h1>
-            <h1 
-                className={styles.name}
-                id={styles.lastName}>
-                {'Raghuwanshi'}
+            <h1 id={styles.firstName} className={styles.name}>Neer</h1>
+            <h1 id={styles.lastName} className={styles.name}>
+                &nbsp;Raghuwanshi
             </h1>
         </div>
     )     

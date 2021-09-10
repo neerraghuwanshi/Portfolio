@@ -18,17 +18,6 @@ export default class Contact extends Component {
                             raghuwanshineer1@gmail.com
                         </a>
                     </div>
-
-                    <div className={row}>
-                        <a target={'_blank'} className={link} rel="noopener noreferrer" href={'tel:+919111367380'}>
-                            <i className={
-                                `${'fas fa-phone'} ${icon}`
-                            }>
-                            </i>
-                            +919111367380
-                        </a>
-                    </div>
-
                 
                     <div className={row}>
                         <a target={'_blank'} className={link} rel="noopener noreferrer" href={'https://www.linkedin.com/in/neerraghuwanshi/'}>

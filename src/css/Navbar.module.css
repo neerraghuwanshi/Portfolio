@@ -1,12 +1,3 @@
-@keyframes navslide {
-    from{
-        transform: translateY(-10vh);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
 @keyframes menuSlideUp {
     from{
         transform: translateY(0);
@@ -69,26 +60,10 @@
     animation-name: menuSlideDown;
 }
 
-.navAnimation {
-    animation-name: navslide;
-    animation-duration: 2s;
-    animation-delay:3.5s;
-    animation-fill-mode: backwards;
-}
-
 
 @media (max-height: 450px){
     .menu{
         transform: translateY(-450px);
-    }
-
-    @keyframes navslide {
-        from{
-            transform: translateY(-40px);
-        }
-        to {
-            transform: translateY(0);
-        }
     }
 
     @keyframes menuSlideUp {

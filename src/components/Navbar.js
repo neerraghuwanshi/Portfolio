@@ -1,34 +1,31 @@
 import React, { useState, useEffect, createRef } from 'react';
-import { useHistory } from 'react-router-dom';
 import styles from '../css/Navbar.module.css';
 import MenuIcon from './MenuIcon'
 import Nav from './Nav'
 
-const Navbar = () => { 
 
+const Navbar = (props) => { 
+
+  const { windowWidth } = props
+
+  const { smallFlex, navFirstDiv, menu, menuDown, menuUp } = styles
+  
   const Menu = createRef()
-  const history = useHistory()
-  const isHome = history.location.pathname === '/'
-
-  const { navAnimation, smallFlex, navFirstDiv, menu, menuDown, menuUp } = styles
 
   const [isMenu, setIsMenu] = useState(true)
   const [closeMenu, setCloseMenu] = useState(false)
   const [smallDisplay, setSmallDisplay] = useState(window.innerWidth < 768)
 
-  const containerClass = `${isHome ? navAnimation : ''} ${smallDisplay ? smallFlex : ''}`
+  const containerClass = `${smallDisplay ? smallFlex : ''}`
 
   useEffect(() => {
-    const handleResize = () => {
-      setSmallDisplay(window.innerWidth < 768)
-      setCloseMenu(false)
-      setIsMenu(true)
+    const handleResize = () => {  
+        setSmallDisplay(window.innerWidth < 768)
+        setCloseMenu(false)
+        setIsMenu(true)
     }
-    window.addEventListener('resize', handleResize)
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  })
+    handleResize()
+  },[windowWidth])
 
   useEffect(() => {
     if (smallDisplay){
@@ -60,7 +57,7 @@ const Navbar = () => {
               closeMenu={closeMenu}
               setIsMenu={setIsMenu}
               setCloseMenu={setCloseMenu}/> 
-            <div className={menu} ref={Menu}>  
+            <div className={menu} ref={Menu}>
               <Nav
                 isMenu={isMenu}
                 closeMenu={closeMenu}
@@ -77,5 +74,6 @@ const Navbar = () => {
       </div>
     )
 }
+
 
 export default Navbar

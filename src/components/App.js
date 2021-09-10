@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Navbar from './Navbar'
 import Contact from './Contact'
 import AboutMe from './AboutMe'
 import Projects from './Projects'
@@ -13,8 +12,7 @@ import Wrapper from './Wrapper'
 export default class App extends Component {
     render() {
         return (
-            <HashRouter>
-                <Navbar/>   
+            <BrowserRouter>
                 <Wrapper>  
                     <Switch>
                         <Route exact path={'/'} component={Home}/>
@@ -24,7 +22,7 @@ export default class App extends Component {
                         <Route exact component={Default}/>
                     </Switch>
                 </Wrapper>
-            </HashRouter>
+            </BrowserRouter>
         )
     }
 }
