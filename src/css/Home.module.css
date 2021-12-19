@@ -8,13 +8,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: red;
-    background: url('https://neerraghuwanshi.s3.ap-south-1.amazonaws.com/coverImage.jpg') no-repeat center center/contain;
 }
 
 .name{
     opacity: 0;
-    color: white;
+    /* color: white; */
     font-family: 'Big Shoulders Stencil Text', cursive;
     animation-name: nameSlide;
     animation-duration: 2s;

@@ -48,6 +48,12 @@ export default class Projects extends Component {
             'SoMe10.png',
         ]
         const images4 = [
+            'so-me1.png',
+            'so-me2.png',
+            'so-me3.png',
+            'so-me4.png',
+        ]
+        const images5 = [
             'youtube1.png',
             'youtube2.png',
             'youtube3.png',
@@ -60,13 +66,13 @@ export default class Projects extends Component {
                     title={'Proearns App'}
                     images={images1}
                     description={
-                        'A digital marketing app available on google play store. User gets paid to watch ads.'
+                        'A digital marketing app available on google play store. Users get paid to watch ads.'
                     }/>
                 <hr className={styles.hr}/>
                 <Project 
                     title={'Proearns Website'}
                     images={images2}
-                    description={'A fully responsive https website about the vision, T&C and Privacy Policy of Proearns.'}/>
+                    description={'An introductory website about the Vision, Contact, T&C and Privacy Policy of Proearns.'}/>
                 <hr className={styles.hr}/>
                 <Project 
                     title={'So-Me App'}
@@ -74,9 +80,14 @@ export default class Projects extends Component {
                     description={'A social media mobile application like instagram with real time messaging.'}/>
                 <hr className={styles.hr}/>
                 <Project 
-                    title={'Youtube Clone'}
+                    title={'So-Me Website'}
                     images={images4}
-                    description={'A website that fetches a list of videos from YouTube for a keyword one want to search a video for. One can select and play other videos from the list as well.'}/>
+                    description={'A social media website for real time messaging.'}/>
+                <hr className={styles.hr}/>
+                <Project 
+                    title={'Youtube Clone'}
+                    images={images5}
+                    description={'A website that fetches videos from YouTube for a search keyword.'}/>
             </div>
         )
     }

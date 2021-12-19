@@ -27,11 +27,9 @@ function Wrapper(props) {
     return (
         <div className={styles.container}>
             <Navbar windowWidth={windowWidth}/>
-            <div>
-                <WindowWidthContext.Provider value={windowWidth}>
-                    {props.children}
-                </WindowWidthContext.Provider>
-            </div>
+            <WindowWidthContext.Provider value={windowWidth}>
+                {props.children}
+            </WindowWidthContext.Provider>
         </div>
     )
 }

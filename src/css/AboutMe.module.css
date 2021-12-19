@@ -1,7 +1,7 @@
 #aboutmeFirstDiv{
+    width: 100%;
     min-height: 90vh;
     margin-top: 10vh;
-    padding: 20px;
     padding-bottom: 0;
     display: flex; 
     flex-direction: column;
@@ -9,11 +9,19 @@
     align-items: center;
 }
 
+#aboutMeSecondDiv {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
 .aboutSection{
-    width: 90vw;
+    width: 90%;
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin: 10px 0;
     font-family: 'Roboto Mono', monospace;
     color: black;
     font-size: .8rem;
@@ -21,10 +29,10 @@
 
 .link{
     color: rgb(82, 180, 236);
+    text-decoration: none;
 }
 
 .link:hover{
-    text-decoration: none;
     color: rgb(82, 180, 236);
 }
 
@@ -42,25 +50,21 @@
 }
 
 @media (min-width: 768px){
-    #aboutmeFirstDiv{
-        padding-top: 5vh;
-    }
     .aboutSection{
-        width: 80vw;
-        margin-bottom: 5vh;
+        width: 80%;
         font-size: 1rem;
     }
 }
 
 @media (min-width: 992px){
     .aboutSection{
-        width: 70vw;
+        width: 70%;
     }
 }
 
 @media (min-width: 1200px){
     .aboutSection{
-        width: 60vw;
+        width: 60%;
         font-size: 1.1rem;
     }
 }

@@ -22,11 +22,11 @@
     padding: 10px;
     font-family: 'Roboto Mono', monospace;
     font-size: .8rem;
+    text-decoration: none;
 }
 
 .link:hover{
     color:rgb(82, 180, 236);
-    text-decoration: none;
 }
 
 .link:hover .icon{

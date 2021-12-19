@@ -1,16 +1,15 @@
 import React from 'react'
-import styles from '../css/Home.module.css'
+
+import CentreText from './CentreText'
 
 
 const Home = () => {
 
     return (
-        <div id={styles.container}>
-            <h1 id={styles.firstName} className={styles.name}>Neer</h1>
-            <h1 id={styles.lastName} className={styles.name}>
-                &nbsp;Raghuwanshi
-            </h1>
-        </div>
+        <CentreText 
+            iterateOnce
+            time={70}
+            text="Hi, I am Neer. How can I help you?"/>
     )     
 }
 
