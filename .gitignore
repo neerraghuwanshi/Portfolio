@@ -11,6 +11,11 @@
 # production
 /build
 
+# Media files
+*.pdf
+*.png
+*.ico
+
 # misc
 .DS_Store
 .env.local

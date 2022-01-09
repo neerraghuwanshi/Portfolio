@@ -29,7 +29,7 @@ export default class AboutMe extends Component {
                             target={'_blank'} 
                             className={styles.link} 
                             rel="noopener noreferrer" 
-                            href='https://neerraghuwanshi.s3.ap-south-1.amazonaws.com/resume.pdf'>
+                            href='pdfs/resume.pdf'>
                             {' Resume'}
                         </a>.
                     </p>

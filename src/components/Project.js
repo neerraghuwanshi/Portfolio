@@ -3,20 +3,22 @@ import React from 'react'
 import styles from '../css/Project.module.css'
 
 
-function Project({images, title, description}) {
+function Project({totalImages, title, description}) {
 
-    const photos = images.map((image, index) => {
-        return(
+    const images = []
+    for (let i = 0; i < totalImages; i++){
+        images.push(
             <img 
-                key={index}
-                alt=''
-                src={`https://neerraghuwanshi.s3.ap-south-1.amazonaws.com/${image}`} 
+                key={i}
+                alt={title + ' Image'}
+                src={`images/projects/${title}/${i+1}.png`} 
                 className={
-                    images.length === index+1 ?
+                    totalImages === i+1 ?
                         styles.image + ' ' + styles.lastImage :
                         styles.image
                 }/>
-    )})
+        )
+    }
 
     return (
         <div className={styles.mainContainer}>
@@ -25,7 +27,7 @@ function Project({images, title, description}) {
             </h1>
             <div className={styles.horizontalList}>
                 <div className={styles.imageContainer}>
-                    {photos}
+                    {images}
                 </div>
             </div>
             <h4 className={styles.description}>
