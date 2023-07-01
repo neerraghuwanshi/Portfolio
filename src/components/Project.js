@@ -11,7 +11,7 @@ function Project({totalImages, title, description}) {
             <img 
                 key={i}
                 alt={title + ' Image'}
-                src={`images/projects/${title}/${i+1}.png`} 
+                src={`https://s3.ap-south-1.amazonaws.com/neerraghuwanshi.com/images/projects/${title}/${i+1}.png`} 
                 className={
                     totalImages === i+1 ?
                         styles.image + ' ' + styles.lastImage :
